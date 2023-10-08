@@ -393,15 +393,17 @@ Brauchen Sie Hilfe bei Ihren Daten?&nbsp;</span></span></span></p></div><div id=
 
 <!-- Click on English Button -->
 <script>
-	// Get a reference to the button element
-	const button = document.getElementById("englishButton");
+	document.addEventListener("DOMContentLoaded", function() {
+		// Get a reference to the button element
+		const button = document.getElementById("englishButton");
 
-	// Add a click event listener to the button
-	button.addEventListener("click", function() {
-		// Redirect to the "mobile.html" page
-		window.location.href = "mobile.html";
+		// Add a click event listener to the button
+		button.addEventListener("click", function() {
+			// Redirect to the "mobile.html" page
+			window.location.href = "mobile.html";
+		});
 	});
-</script>
+</script>  
 
 <!-- Sentry -->
 <script id="sentry">
