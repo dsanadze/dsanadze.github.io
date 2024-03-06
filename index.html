@@ -374,9 +374,14 @@ var e=function(t,n){return e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
 
     // Add a click event listener to the button
     germanButton.addEventListener('click', function() {
-        // Redirect to another HTML file when the button is clicked
-        window.history.pushState({}, 'Home', 'Home');
-        window.location.href = './index_DE.html';;
+
+		// Update the URL to display "Home"
+		window.history.pushState({}, 'Home', 'Home');
+    
+		// Redirect to another HTML file after a short delay
+		setTimeout(function() {
+        window.location.href = './index_DE.html';
+		}, 100); // milliseconds
     });
 	
 	    // Get a reference to the button
